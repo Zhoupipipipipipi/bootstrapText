@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>徽章</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Hello,World</h1>
+            <p>欢迎来到极客学院，希望您能在这里学到更多的知识，丰富自己，充实自己</p>
+            <p><a class="btn btn-info btn-lg" href="#">learn more</a></p>
+        </div>
+    </div>
+    <div class="container">
+        <a href="#">短信消息<span class="badge">30</span></a>
+        <button type="button" class="btn btn-default">Messages <span class="badge">20</span></button>
+    </div>
+
+    <ul class="nav nav-pills" id="mylist">
+        <li class="active"><a href="#">Home<span class="badge">30</span></a></li>
+        <li><a href="#">Message<span class="badge">100</span></a></li>
+        <li><a href="#">Problem<span class="badge">5</span></a></li>
+    </ul>
+
+<script src="jquery.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script>
+    $('#mylist a').click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+    })
+</script>
+</body>
+</html>

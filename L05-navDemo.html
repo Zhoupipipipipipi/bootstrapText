@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <ul id="mytabs" class="nav nav-pills nav-justified" role="tablist">
+            <li class="active"><a href="#">Home</a></li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Hello
+            <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="#">hello1</a></li>
+                <li><a href="#">hello2</a></li>
+                <li><a href="#">hello3</a></li>
+                <li><a href="#">hello4</a></li>
+            </ul>
+            </li>
+            <li><a href="#">World</a></li>
+        </ul>
+    </div>
+<script src="jquery.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script>
+    $("#mytabs a").click(function(e){
+        e.preventDefault();     //取消事件的默认属性
+        $(this).tab("show");
+    })
+</script>
+</body>
+</html>
